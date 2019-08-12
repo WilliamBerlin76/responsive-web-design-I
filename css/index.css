@@ -198,12 +198,25 @@ hr{
 @media all and (max-width: 500px){
     .navigation{
         flex-direction: column;
+        margin-left: -56px;
+        margin-right: -55px;
+    }
+    a{
+        border-bottom: 1px solid lightgray;
         justify-content: center;
+        padding-left: 43%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%
+    }
+    #services{
+        padding-top: 5%;
+        border-top: 1px solid lightgray;
     }
     .logo{
         position: absolute;
-        margin-top: -99px;
-        justify-content: center;
+        margin-top: -51%;
+        margin-left: 31%;
     }
     .top-content{
         flex-direction: column;
@@ -217,4 +230,8 @@ hr{
     .bottom-content div p{
         width: 307%;
     }
+    header{
+        margin-left: 0%;
+    }
+    
 }
