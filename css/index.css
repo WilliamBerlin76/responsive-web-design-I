@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body{
-    width: 1200px;
+    width: 78%;
     margin: 0px auto;
 }
 .container{
@@ -74,18 +74,14 @@ body{
 }
 .navigation{
 	color: gray;
-	display: flex;
-	top: 10px;
-	margin-bottom: 15px;
-	background-color: rebeccapurple;
-	position: fixed;
-	z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 a{
-	margin:30px;
 	color: #D3D3D3;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .logo{
@@ -94,9 +90,9 @@ a{
 
 header{
     display: flex;
-	margin-top: 125px;
+	margin-top: 40px;
 	text-align: center;
-	width: 400px;
+	width: 33%;
 }
 
 header div{
@@ -105,6 +101,8 @@ header div{
     justify-content:center;
     align-content: center;
     margin: 0 25%;
+    align-items: center;
+
 }
 .header-container{
 	display: flex;
@@ -120,15 +118,14 @@ h1{
 }
 button{
 	background-color: white;
-	display: flex;
+    display: flex;
+    justify-content: center;
 	padding: 5px 38px;
 	border: 1px solid black;
 	width: 150px;
 }
 .code-circle{
-	display: flex;
-	top: 110px;
-	left: 620px;
+	width: 100%;
 }
 .top-content{
 	display: flex;
@@ -137,6 +134,9 @@ button{
 }
 .features{
 	max-width:48%;
+}
+.middle-img{
+    width: 100%;
 }
 .about{
 	max-width:48%;
@@ -171,9 +171,50 @@ hr{
 }
 
 @media all and (max-width: 800px){
+    body{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .code-circle{
+        display: none;
+        position: fixed;
+    }
+    .logo{
+        position: absolute;
+        margin-top: -67px;
+        justify-content: center;
+    }
+    .navigation{
+        margin-top: 102px;
+    }
+    header{
+        margin-left: 18%;
+    }
 
 }
 
 @media all and (max-width: 500px){
-
+    .navigation{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        position: absolute;
+        margin-top: -99px;
+        justify-content: center;
+    }
+    .top-content{
+        flex-direction: column;
+    }
+    .bottom-content{
+        flex-direction: column;
+    }
+    .top-content div p{
+        width:212%;
+    }
+    .bottom-content div p{
+        width: 307%;
+    }
 }
