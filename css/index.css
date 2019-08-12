@@ -76,7 +76,7 @@ body{
 	color: gray;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
 
 a{
@@ -216,7 +216,6 @@ hr{
     .logo{
         position: absolute;
         margin-top: -51%;
-        margin-left: 31%;
     }
     .top-content{
         flex-direction: column;
